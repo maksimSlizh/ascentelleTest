@@ -1,0 +1,169 @@
+.root {
+  background: var(--color-bg-cart);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: var(--heigth-collection);
+  width: 100%;
+}
+
+.left :global(img) {
+  object-fit: cover;
+}
+
+.leftBadge {
+  position: absolute;
+  left: var(--space-6);
+  bottom: var(--space-6);
+  background: var(--color-bg);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-3);
+  width: var(--width-info-md);
+  height: var(--heigth-info);
+  color: var(--color-main);
+}
+
+.leftTitle {
+  font-size: var(--font-size-main);
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.leftLink {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid currentColor;
+  width: max-content;
+}
+
+.rightCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: var(--heigth-collection);
+  gap: 12px;
+}
+
+.card {
+  background: transparent;
+  padding-bottom: 10px;
+  width: 276px;
+  min-width: 260px;
+}
+
+.media {
+  position: relative;
+  width: var(--width-product);
+  height: var(--heigth-collection-sm);
+  overflow: hidden;
+}
+
+.media :global(img) {
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.like {
+  position: absolute;
+  background: transparent;
+  color: #fff;
+  top: 10px;
+  z-index: 3;
+  right: 10px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.info {
+  padding: 6px;
+  font-size: var(--font-size-s);
+  font-weight: 500;
+}
+
+.title {
+  margin: 0 0 4px;
+  color: var(--color-main);
+}
+
+.prices {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.priceNow {
+  color: var(--color-main);
+}
+
+.priceOld {
+  color: var(--color-muted);
+  text-decoration: line-through;
+}
+
+.arrow {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  outline: none;
+  border: none;
+  background: transparent;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  left: 65px;
+}
+
+.arrowRight {
+  right: 50px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #999592;
+}
+
+.dotActive {
+  background: #453631;
+}

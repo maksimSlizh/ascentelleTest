@@ -1,0 +1,104 @@
+.root {
+  padding-bottom: var(--padding-main);
+  background: var(--color-bg);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--margin-main);
+}
+
+.top h2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-main);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.all {
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid currentColor;
+}
+
+.grid {
+  position: relative;
+  display: flex;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.tile {
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.media {
+  position: relative;
+  overflow: hidden;
+  width: var(--width-lookbook);
+  height: var(--heigth-lookbook);
+}
+
+.media :global(img) {
+  object-fit: cover;
+  object-position: 0 -70px;
+  width: 100%;
+  height: 100%;
+}
+
+.pos3 :global(img) {
+  object-position: 0 -160px;
+}
+
+.captionUnder {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.name {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-main);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
+.arrow {
+  position: absolute;
+  z-index: 2;
+  right: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: transparent;
+}
+
+.flipX :global(img) {
+  transform: scaleX(-1);
+}
+
+.rot180 :global(img) {
+  transform: rotate(180deg);
+}
+
+.flipY :global(img) {
+  transform: scaleY(-1);
+}

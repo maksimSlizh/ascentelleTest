@@ -1,0 +1,176 @@
+.root {
+  background: #f5f1ec;
+  color: #2d2522;
+  padding: var(--space-8) 0 var(--space-6);
+}
+
+.top {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: var(--space-8);
+  align-items: start;
+  padding: 18px 0;
+}
+
+.top::before,
+.top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e3ddd8;
+}
+
+.top::before {
+  top: 0;
+}
+
+.top::after {
+  bottom: 0;
+}
+
+.col {
+  padding-right: var(--space-6);
+}
+
+.col+.col {
+  padding-left: var(--space-6);
+  border-left: 1px solid #e3ddd8;
+  height: 100%;
+}
+
+.colCatalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 10px;
+}
+
+.colCatalog .title {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 10px;
+}
+
+.lists {
+  display: flex;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.list a {
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--color-main);
+  text-decoration: none;
+}
+
+.list a:hover {
+  text-decoration: underline;
+}
+
+.colCompany {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.colHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.colFoot {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.phone {
+  font-size: 12px;
+}
+
+.hours {
+  font-size: 12px;
+  color: #8c8682;
+}
+
+.tg {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.toTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: #2d2522;
+  margin-bottom: 10px;
+}
+
+.toTopIcon {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cfc7c0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+}
+
+.brand {
+  font-size: clamp(64px, 14vw, 180px);
+  line-height: .9;
+  letter-spacing: .08em;
+  color: #3b2e2a;
+  margin: 22px 0 18px;
+  text-transform: lowercase;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #8c8682;
+  padding-top: 12px;
+  border-top: 1px solid #e3ddd8;
+}
+
+.policy {
+  text-transform: uppercase;
+}

@@ -1,0 +1,84 @@
+.root {
+  padding-top: var(--padding-main);
+  padding-bottom: var(--padding-main);
+  background: var(--color-bg);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--margin-main);
+  color: var(--color-main);
+}
+
+.title {
+  font-size: var(--font-size-main);
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.all {
+  font-size: var(--font-size-s);
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid currentColor;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.tile {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: var(--heigth-category);
+  width: var(--width-category);
+
+}
+
+.tile :global(img) {
+  object-fit: cover;
+}
+
+.withDivider {
+  border-left: 1px solid #ece9e6;
+  padding-left: var(--space-6);
+}
+
+.caption {
+  position: absolute;
+  left: var(--space-4);
+  bottom: var(--space-4);
+  background: var(--color-bg);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  height: var(--heigth-info);
+  width: var(--width-info-sm);
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-main);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.link {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--color-main);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid currentColor;
+  width: max-content;
+}

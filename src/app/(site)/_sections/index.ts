@@ -1,0 +1,6 @@
+export * from './Categories/Categories'
+export * from './CollectionSpot/CollectionSpot'
+export * from './Hero/Hero'
+export * from './Lookbook/Lookbook'
+export * from './NewArrivals/NewArrivals'
+export * from './Newsletter/Newsletter'
