@@ -12,7 +12,6 @@ type Props = {
   onSelectColor?: (id: string) => void;
 };
 
-/** Панель быстрых вариаций: показывается, когда .variants в карточке выезжает */
 export function QuickVariants({
   sizes = [],
   colors = [],
@@ -21,7 +20,6 @@ export function QuickVariants({
 }: Props) {
   return (
     <div className={s.panel}>
-
       {colors.length > 0 && (
         <div className={s.colors} role="listbox" aria-label="Цвета">
           {colors.map((c) => (

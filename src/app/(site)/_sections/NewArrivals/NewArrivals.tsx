@@ -4,6 +4,14 @@ import { products } from "@/shared/mocks";
 import s from "./NewArrivals.module.scss";
 
 export function NewArrivals() {
+
+  const demoSizes = ["42", "44", "46", "48", "50", "52"];
+  const demoColors = [
+    { id: "blk", hex: "#C9A07A" },
+    { id: "crm", hex: "#DB3C3C" },
+    { id: "crm", hex: "#6D8945" },
+    { id: "crm", hex: "#453631" },
+  ];
   return (
     <section className={s.root} aria-labelledby="new-title">
       <Container px>
@@ -15,7 +23,7 @@ export function NewArrivals() {
         <div className={s.grid} role="list">
           {products.map((p) => (
             <div className={s.item} role="listitem" key={p.id}>
-              <ProductCard {...p} />
+             <ProductCard {...p} sizes={demoSizes} colors={demoColors} />
             </div>
           ))}
         </div>
