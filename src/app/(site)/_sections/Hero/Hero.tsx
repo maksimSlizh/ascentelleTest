@@ -13,6 +13,7 @@ export function Hero() {
                 src="/img/Hero/hero-left.jpg"
                 alt="Season sale"
                 fill
+                quality={100}
                 priority
               />
               <a className={s.caption} href="#">
@@ -21,10 +22,11 @@ export function Hero() {
               </a>
             </div>
 
-            <div className={s.tile}>
+            <div className={`${s.tile} ${s.flipX}` }>
               <Image
                 src="/img/Hero/hero-right.jpg"
                 alt="Бестселлеры сезона"
+                quality={100}
                 fill
               />
               <a className={s.caption} href="#">

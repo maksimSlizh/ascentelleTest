@@ -59,3 +59,15 @@
   border-bottom: 1px solid currentColor;
   width: max-content;
 }
+
+.flipX :global(img) {
+  transform: scaleX(-1);
+}
+
+.rot180 :global(img) {
+  transform: rotate(180deg);
+}
+
+.flipY :global(img) {
+  transform: scaleY(-1);
+}
