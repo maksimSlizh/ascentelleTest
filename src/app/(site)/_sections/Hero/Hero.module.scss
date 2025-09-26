@@ -1,22 +1,32 @@
 .root {
+  block-size: calc(100svh - var(--header-offset, 0px));
   background: var(--color-bg);
+  overflow: clip;
+  /* аккуратно подрежет всё, что выше/ниже секции */
+}
+
+.inner {
+  height: 100%;
+  display: flex;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 100%;
 }
 
 .tile {
   position: relative;
   display: block;
-  height: var(--heigth-hero);
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
 .tile :global(img) {
   object-fit: cover;
+  object-position: top;
 }
 
 .caption {

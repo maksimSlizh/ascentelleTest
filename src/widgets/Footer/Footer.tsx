@@ -7,7 +7,7 @@ export function Footer() {
     <footer className={s.root}>
       <Container px>
         <div className={s.top}>
-          <div className={`${s.col} ${s.colCatalog}`}>
+          <div className={`${s.col}`}>
             <div className={s.group}>
               <div className={s.title}>КАТАЛОГ</div>
               <div className={s.lists}>
