@@ -95,11 +95,11 @@
 
 .priceNow {
   font-size: var(--font-size-s);
-  color: var(--color-main);
+  color: var(--color-muted);
 }
 
 .priceOld {
   font-size: var(--font-size-s);
-  color: var(--color-muted);
+  color: var(--color-muted-op);
   text-decoration: line-through;
 }
