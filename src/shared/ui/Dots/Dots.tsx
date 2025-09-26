@@ -24,6 +24,7 @@ export function Dots({
   return (
     <div
       className={clsx(s.root, className)}
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       style={{ ["--dot-size" as any]: `${size}px`, ["--dot-gap" as any]: `${gap}px` }}
       role="tablist"
       aria-label="Индикатор слайдов"
