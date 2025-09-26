@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.dot {
+  inline-size: var(--dot-size, 8px);
+  block-size: var(--dot-size, 8px);
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #DAD7D4;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.dot:hover {
+  border-color: #b0aca9;
+}
+
+.active {
+  background: #453631;
+  border-color: #453631;
+}

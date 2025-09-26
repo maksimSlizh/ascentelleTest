@@ -1,4 +1,4 @@
-import { Container } from "@/shared/ui";
+import { Container, Dots } from "@/shared/ui";
 import { ProductCard } from "@/entities/cards";
 import { products } from "@/shared/mocks";
 import s from "./NewArrivals.module.scss";
@@ -6,7 +6,7 @@ import s from "./NewArrivals.module.scss";
 export function NewArrivals() {
   return (
     <section className={s.root} aria-labelledby="new-title">
-      <Container>
+      <Container px>
         <div className={s.head}>
           <h2 id="new-title" className={s.title}>НОВОЕ ПОСТУПЛЕНИЕ</h2>
           <a className={s.all} href="#">СМОТРЕТЬ ВСЕ</a>
@@ -20,12 +20,7 @@ export function NewArrivals() {
           ))}
         </div>
 
-        <div className={s.dots} aria-hidden>
-          <span className={`${s.dot} ${s.dotActive}`}></span>
-          <span className={s.dot}></span>
-          <span className={s.dot}></span>
-          <span className={s.dot}></span>
-        </div>
+        <Dots total={4} active={0} className={s.dots} />
       </Container>
     </section>
   );

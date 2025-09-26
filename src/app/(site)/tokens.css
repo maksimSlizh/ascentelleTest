@@ -1,12 +1,12 @@
 :root {
-  --сolor-main: #453631;
+  --color-main: #453631;
   --color-bg: #FCFAF7;
   --color-bg-cart: #f5f1eb;
   --color-fg: #0e0e0e;
   --color-muted: #999592;
   --accent: #1a1a1a;
 
-  --font-main: "TT Fors Trial", sans-serif;
+  --font-main: "TT Fors Trial", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   --font-size-main: 16px;
   --font-size-s: 12px;
 
@@ -38,9 +38,12 @@
   --margin-main: 25px;
 
   --space-2: 8px;
-  --space-4: 16px;
+  --space-3: 10px;
+  --space-4: 20px;
   --space-6: 24px;
   --space-8: 32px;
+
+  --space-letter: -0.03em;
 
   --container: 1440px;
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container } from "@/shared/ui";
+import { Container, Dots } from "@/shared/ui";
 import s from "./CollectionSpot.module.scss";
 
 export function CollectionSpot() {
@@ -22,10 +22,10 @@ export function CollectionSpot() {
 
           <div className={s.rightCol}>
             <button className={`${s.arrow} ${s.arrowLeft}`} aria-label="Назад">
-              <Image src="/img/icons/arr-left.png" alt="" width={20} height={20} />
+              <Image src="/svg/Collection/arr-left.svg" alt="" width={20} height={20} />
             </button>
             <button className={`${s.arrow} ${s.arrowRight}`} aria-label="Вперёд">
-              <Image src="/img/icons/arr-right.png" alt="" width={20} height={20} />
+              <Image src="/svg/Collection/arr-right.svg" alt="" width={20} height={20} />
             </button>
 
             <article className={s.card}>
@@ -34,7 +34,7 @@ export function CollectionSpot() {
                 <span className={s.badge}>BACK TO OFFICE</span>
                 <Image src="/img/CollectionSpot/cs1.png" alt="Пиджак классический" fill />
                 <button className={s.like} aria-label="В избранное">
-                  <Image src="/img/icons/favorites.png" alt="" width={16} height={16} />
+                  <Image src="/svg/Collection/favorite.svg" alt="" width={14} height={13} />
                 </button>
               </div>
 
@@ -47,12 +47,7 @@ export function CollectionSpot() {
               </div>
             </article>
 
-            <div className={s.dots} aria-hidden>
-              <span className={`${s.dot} ${s.dotActive}`} />
-              <span className={s.dot} />
-              <span className={s.dot} />
-              <span className={s.dot} />
-            </div>
+            <Dots total={4} active={0} className={s.dots} />
           </div>
         </div>
       </Container>

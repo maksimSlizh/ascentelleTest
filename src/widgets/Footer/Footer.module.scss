@@ -1,16 +1,15 @@
 .root {
-  background: #f5f1ec;
-  color: #2d2522;
+  background: #F5F1EB;
   padding: var(--space-8) 0 var(--space-6);
 }
 
 .top {
   position: relative;
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--space-8);
   align-items: start;
-  padding: 18px 0;
+  padding: 20px 0;
 }
 
 .top::before,
@@ -20,7 +19,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: #e3ddd8;
+  background: #DAD7D4;
 }
 
 .top::before {
@@ -37,7 +36,7 @@
 
 .col+.col {
   padding-left: var(--space-6);
-  border-left: 1px solid #e3ddd8;
+  border-left: 1px solid #66615E33;
   height: 100%;
 }
 
@@ -49,17 +48,9 @@
 
 .title {
   font-size: 12px;
+  font-family: "TT Fors Trial", sans-serif;
   font-weight: 500;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: var(--color-muted);
-  margin-bottom: 10px;
-}
-
-.colCatalog .title {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .12em;
+  letter-spacing: var(--space-letter);
   text-transform: uppercase;
   color: var(--color-muted);
   margin-bottom: 10px;
@@ -67,7 +58,7 @@
 
 .lists {
   display: flex;
-  gap: var(--space-6);
+  gap: 45px;
   align-items: start;
 }
 
@@ -76,12 +67,19 @@
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 10px;
+  gap: 8px;
+}
+
+.list li {
+  line-height: 1;
 }
 
 .list a {
   font-size: 12px;
-  letter-spacing: .04em;
+  font-family: "TT Fors Trial", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: var(--space-letter);
   text-transform: uppercase;
   color: var(--color-main);
   text-decoration: none;
@@ -115,18 +113,20 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
-}
-
-.phone {
+  font-family: "TT Fors Trial", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: var(--space-letter);
+  color: var(--color-main);
   font-size: 12px;
-}
-
-.hours {
-  font-size: 12px;
-  color: #8c8682;
 }
 
 .tg {
+  font-family: "TT Fors Trial", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: var(--space-letter);
+  color: var(--color-main);
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -135,40 +135,32 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  font-family: "TT Fors Trial", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: var(--space-letter);
+  color: var(--color-main);
   font-size: 12px;
-  letter-spacing: .1em;
   text-transform: uppercase;
-  color: #2d2522;
   margin-bottom: 10px;
 }
 
-.toTopIcon {
-  width: 18px;
-  height: 18px;
-  border: 1px solid #cfc7c0;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  line-height: 1;
-}
-
 .brand {
-  font-size: clamp(64px, 14vw, 180px);
-  line-height: .9;
-  letter-spacing: .08em;
-  color: #3b2e2a;
-  margin: 22px 0 18px;
-  text-transform: lowercase;
+  padding: 20px 0;
 }
 
 .bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "TT Fors Trial", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: var(--space-letter);
+  color: var(--color-muted);
   font-size: 12px;
-  color: #8c8682;
-  padding-top: 12px;
-  border-top: 1px solid #e3ddd8;
+  padding: 20px 0 0;
+  border-top: 1px solid #DAD7D4;
 }
 
 .policy {

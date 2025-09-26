@@ -14,15 +14,17 @@
 
 .title {
   font-size: var(--font-size-main);
+  font-family: "TT Fors Trial", sans-serif;
   font-weight: 500;
-  letter-spacing: .12em;
+  letter-spacing: var(--space-letter);
   text-transform: uppercase;
 }
 
 .all {
   font-size: var(--font-size-s);
+  font-family: "TT Fors Trial", sans-serif;
   font-weight: 500;
-  letter-spacing: .12em;
+  letter-spacing: var(--space-letter);
   text-transform: uppercase;
   border-bottom: 1px solid currentColor;
 }
@@ -56,28 +58,29 @@
   left: var(--space-4);
   bottom: var(--space-4);
   background: var(--color-bg);
-  padding: var(--space-4);
+  padding: var(--space-3);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 6px;
   height: var(--heigth-info);
   width: var(--width-info-sm);
 }
 
 .name {
   font-size: 16px;
-  font-weight: 500;
   color: var(--color-main);
-  letter-spacing: .08em;
+  font-family: "TT Fors Trial", sans-serif;
+  font-weight: 500;
+  letter-spacing: var(--space-letter);
   text-transform: uppercase;
 }
 
 .link {
   font-size: 10px;
-  font-weight: 500;
   color: var(--color-main);
-  letter-spacing: .12em;
+  font-family: "TT Fors Trial", sans-serif;
+  font-weight: 500;
+  letter-spacing: var(--space-letter);
   text-transform: uppercase;
   border-bottom: 1px solid currentColor;
   width: max-content;

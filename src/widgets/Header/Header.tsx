@@ -7,7 +7,7 @@ export function Header() {
   return (
     <header className={s.root}>
       <div className={s.topbar}>
-        <Container>
+        <Container px>
           <div className={s.topbarRow}>
             <span>МАКСИМАЛЬНЫЕ ЛЕТНИЕ СКИДКИ 25%</span>
             <a className={s.topbarClose} href="#">ЗАКРЫТЬ</a>
@@ -16,7 +16,7 @@ export function Header() {
       </div>
 
       <div className={s.main}>
-        <Container>
+        <Container px>
           <div className={s.row}>
             <nav className={s.nav}>
               <a href="#">КАТАЛОГ</a>
@@ -27,10 +27,10 @@ export function Header() {
 
             <Link className={s.logo} href="/" aria-label="Ascentelle">
               <Image
-                src="/img/logo/logo.png"
+                src="/svg/Header/logo.svg"
                 alt="Ascentelle Club"
                 priority={false}
-                width={107}
+                width={106}
                 height={40}
               />
             </Link>
@@ -42,16 +42,16 @@ export function Header() {
               </a>
 
               <a className={s.icon} href="#" aria-label="Избранное">
-                <Image src="/svg/Header/heart.svg" alt="" width="18" height="18" />
+                <Image src="/svg/Header/heart.svg" alt="" width="16" height="16" />
               </a>
               <a className={s.icon} href="#" aria-label="Поиск">
-                <Image src="/svg/Header/search.svg" alt="" width="18" height="18" />
+                <Image src="/svg/Header/search.svg" alt="" width="16" height="16" />
               </a>
               <a className={s.icon} href="#" aria-label="Профиль">
-                <Image src="/svg/Header/user.svg" alt="" width="18" height="18" />
+                <Image src="/svg/Header/user.svg" alt="" width="16" height="16" />
               </a>
               <a className={s.icon} href="#" aria-label="Корзина">
-                <Image src="/svg/Header/bag.svg" alt="" width="18" height="18" />
+                <Image src="/svg/Header/bag.svg" alt="" width="16" height="16" />
               </a>
             </div>
           </div>

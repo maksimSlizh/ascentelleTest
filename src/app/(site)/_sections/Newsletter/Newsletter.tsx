@@ -5,7 +5,7 @@ import s from "./Newsletter.module.scss";
 export function Newsletter() {
   return (
     <section className={s.root} aria-labelledby="nl-title">
-      <Container>
+      <Container px>
         <div className={s.grid}>
           <div className={s.left}>
             <div>

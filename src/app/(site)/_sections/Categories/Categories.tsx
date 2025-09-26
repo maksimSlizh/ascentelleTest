@@ -6,7 +6,7 @@ import s from "./Categories.module.scss";
 export function Categories() {
   return (
     <section className={s.root} aria-labelledby="cat-label">
-      <Container>
+      <Container px>
         <div className={s.head}>
           <h2 id="cat-label" className={s.title}>ПОПУЛЯРНЫЕ КАТЕГОРИИ</h2>
           <a className={s.all} href="#">СМОТРЕТЬ ВСЕ</a>

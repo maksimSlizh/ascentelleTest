@@ -18,7 +18,7 @@ export function ProductCard({ title, price, oldPrice, img, isNew }: Props) {
         <div className={s.top}>
           {isNew && <span className={s.badge}>NEW</span>}
           <button className={s.like} aria-label="В избранное">
-            <img src="/svg/Header/heart.svg" alt="" width={18} height={18} />
+            <Image src="/svg/Header/heart.svg" alt="" width={16} height={16} />
           </button>
         </div>
 

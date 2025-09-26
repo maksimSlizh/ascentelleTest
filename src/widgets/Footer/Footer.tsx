@@ -5,7 +5,7 @@ import s from "./Footer.module.scss";
 export function Footer() {
   return (
     <footer className={s.root}>
-      <Container>
+      <Container px>
         <div className={s.top}>
           <div className={`${s.col} ${s.colCatalog}`}>
             <div className={s.group}>
@@ -48,7 +48,7 @@ export function Footer() {
             <div className={s.colHead}>
               <div className={s.title}>КОМПАНИЯ</div>
               <a href="#" className={s.toTop} aria-label="Наверх">
-                НАВЕРХ <Image src="/img/icons/arr-up.png" alt="" width={20} height={20} />
+                НАВЕРХ <Image src="/svg/Footer/arr-up.svg" alt="" width={20} height={20} />
               </a>
             </div>
 

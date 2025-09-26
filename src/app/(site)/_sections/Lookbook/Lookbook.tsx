@@ -5,15 +5,15 @@ import s from "./Lookbook.module.scss";
 export function Lookbook() {
   return (
     <section className={s.root} aria-labelledby="lkb-title">
-      <Container>
+      <Container px>
         <div className={s.top}>
-          <h2 id="lkb-title">LOOKBOOK</h2>
+          <h2 id="lkb-title" className={s.title}>LOOKBOOK</h2>
           <a className={s.all} href="#">СМОТРЕТЬ ВСЕ</a>
         </div>
 
         <div className={s.grid}>
           <div className={s.arrow} aria-hidden>
-            <Image src="/img/icons/arr-right-2.png" alt="" width={20} height={20} />
+            <Image src="/svg/Lookbook/arr.svg" alt="" width={20} height={20} />
           </div>
 
           <a className={`${s.tile} ${s.tileLg}`} href="#">

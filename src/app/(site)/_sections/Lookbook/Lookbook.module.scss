@@ -10,17 +10,20 @@
   margin-bottom: var(--margin-main);
 }
 
-.top h2 {
+.title {
   font-size: 16px;
+  font-family: "TT Fors Trial", sans-serif;
   font-weight: 500;
+  letter-spacing: var(--space-letter);
   color: var(--color-main);
-  letter-spacing: .12em;
   text-transform: uppercase;
 }
 
 .all {
   font-size: 12px;
-  letter-spacing: .12em;
+  font-family: "TT Fors Trial", sans-serif;
+  font-weight: 500;
+  letter-spacing: var(--space-letter);
   text-transform: uppercase;
   border-bottom: 1px solid currentColor;
 }
@@ -65,15 +68,18 @@
 
 .name {
   font-size: 12px;
+  font-family: "TT Fors Trial", sans-serif;
   font-weight: 500;
+  letter-spacing: var(--space-letter);
   color: var(--color-main);
-  letter-spacing: .08em;
   text-transform: uppercase;
 }
 
 .sub {
   font-size: 12px;
+  font-family: "TT Fors Trial", sans-serif;
   font-weight: 500;
+  letter-spacing: var(--space-letter);
   color: var(--color-muted);
 }
 
